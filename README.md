@@ -1,30 +1,34 @@
 # docker-laravel 🐳
 
-![License](https://img.shields.io/github/license/ucan-lab/docker-laravel?color=f05340)
-![Stars](https://img.shields.io/github/stars/ucan-lab/docker-laravel?color=f05340)
-![Issues](https://img.shields.io/github/issues/ucan-lab/docker-laravel?color=f05340)
-![Forks](https://img.shields.io/github/forks/ucan-lab/docker-laravel?color=f05340)
-
 ## Introduction
 
 Build a simple laravel development environment with docker-compose.
 
 ## Usage
 
+### start new project
 ```bash
-$ git clone git@github.com:ucan-lab/docker-laravel.git
-$ cd docker-laravel
+$ git clone git@github.com:haruu11113/docker-laravel-template.git
+$ cd docker-laravel-template
 $ make create-project # Install the latest Laravel project
 $ make install-recommend-packages # Not required
 ```
 
 http://localhost
 
-Read this [Makefile](https://github.com/ucan-lab/docker-laravel/blob/master/Makefile).
+### start clone project
+
+```bash
+$ git clone git@github.com:haruu11113/docker-laravel-template.git
+$ git cloen <project url: git@github.com:???????????????.git> docker-laravel-template/backend
+$ cd docker-laravel-template
+$ make init
+```
+
+http://localhost
 
 ## Tips
 
-Read this [Wiki](https://github.com/ucan-lab/docker-laravel/wiki).
 
 ## Container structure
 
