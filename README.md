@@ -59,3 +59,10 @@ If you want to delete MySQL data intentionally, execute the following command.
 ```bash
 $ docker-compose down -v && docker-compose up
 ```
+
+## License
+copyright (c) 2021 haruu11113/docker-laravel-template
+https://github.com/haruu11113/docker-laravel-template/blob/main/LICENSE
+
+copyright (c) 2020 ucan-lab/docker-laravel
+https://github.com/ucan-lab/docker-laravel/blob/main/LICENSE
