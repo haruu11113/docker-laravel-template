@@ -62,4 +62,6 @@ fabric.properties
 .env
 
 # project file
-backend/
+backend/*
+!backend/.gitkeep
+
