@@ -1,5 +1,5 @@
 FROM php:7.2-fpm-buster
-LABEL maintainer="ucan-lab <yes@u-can.pro>"
+LABEL maintainer="haruu11113"
 SHELL ["/bin/bash", "-oeux", "pipefail", "-c"]
 
 # timezone environment
