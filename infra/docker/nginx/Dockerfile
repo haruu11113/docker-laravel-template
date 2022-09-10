@@ -1,20 +1,7 @@
-FROM node:14.2-alpine as node
-FROM nginx:1.18-alpine
-LABEL maintainer="haruu11113"
-SHELL ["/bin/ash", "-oeux", "pipefail", "-c"]
+FROM nginx:1.22
+
+WORKDIR /home/ec2-user/code/ea
 
 ENV TZ=UTC
 
-RUN apk update && \
-  apk add --update --no-cache --virtual=.build-dependencies g++
-
-# node command
-COPY --from=node /usr/local/bin /usr/local/bin
-# npm command
-COPY --from=node /usr/local/lib /usr/local/lib
-# yarn command
-COPY --from=node /opt /opt
-# nginx config file
 COPY ./infra/docker/nginx/*.conf /etc/nginx/conf.d/
-
-WORKDIR /work/backend
