@@ -7,6 +7,15 @@
 Build a simple laravel development environment with docker-compose.
 
 ## Usage
+### start with eneact2
+```bash
+$ git clone git@github.com:haruu11113/docker-laravel-template.git
+$ cd docker-laravel-template
+$ git submodule update
+$ cp .env.example .env
+-> edit .env
+$ make init
+```
 
 ### start new project
 ```bash
