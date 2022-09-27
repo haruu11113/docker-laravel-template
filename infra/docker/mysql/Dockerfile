@@ -1,4 +1,4 @@
-FROM mysql:8.0
+FROM mysql/mysql-server:8.0
 LABEL maintainer="haruu11113"
 
 ENV TZ=UTC
