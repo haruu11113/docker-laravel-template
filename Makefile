@@ -130,3 +130,6 @@ ide-helper:
 new-db:
 	docker cp ./eneact2_20220118.dump `docker-compose ps -q db`:/tmp/
 	# docker-compose exec db bash -c 'mysql -u $$MYSQL_USER -p$$MYSQL_PASSWORD $$MYSQL_DATABASE < /tmp/eneact2_20220118.dump'
+cp-phpini:
+	docker cp ./infra/docker/php/php.ini `docker-compose ps -q app`:/usr/local/etc/php/php.ini
+	docker-compose exec app chown root:root /usr/local/etc/php/php.ini
