@@ -62,7 +62,7 @@ log-db:
 log-db-watch:
 	docker-compose logs --follow db
 web:
-	docker-compose exec web ash
+	docker-compose exec web bash
 app:
 	docker-compose exec app bash
 migrate:
@@ -71,6 +71,8 @@ fresh:
 	docker-compose exec app php artisan migrate:fresh --seed
 seed:
 	docker-compose exec app php artisan db:seed
+create-user:
+	docker-compose exec app php artisan db:seed --class=UserSeeder
 dacapo:
 	docker-compose exec app php artisan dacapo
 rollback-test:
