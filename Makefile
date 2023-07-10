@@ -130,7 +130,10 @@ ide-helper:
 	docker-compose exec app php artisan ide-helper:generate
 	docker-compose exec app php artisan ide-helper:meta docker-compose exec app php artisan ide-helper:models --nowrite
 new-db:
-	docker cp ./eneact2_20220118.dump `docker-compose ps -q db`:/tmp/
+	docker cp ./activities.dump `docker-compose ps -q db`:/tmp/
+	docker cp ./activity_targets.dump `docker-compose ps -q db`:/tmp/
+	docker cp ./records.dump `docker-compose ps -q db`:/tmp/
+	# docker cp ./eneact2_20220118.dump `docker-compose ps -q db`:/tmp/
 	# docker-compose exec db bash -c 'mysql -u $$MYSQL_USER -p$$MYSQL_PASSWORD $$MYSQL_DATABASE < /tmp/eneact2_20220118.dump'
 cp-phpini:
 	docker cp ./infra/docker/php/php.ini `docker-compose ps -q app`:/usr/local/etc/php/php.ini

@@ -1,5 +1,5 @@
 # docker-laravel 🐳
-こちらの記事を参考に、させていただいています。  
+こちらの記事を参考に、させていただいています。
 [qiita : 最強のLaravel開発環境をDockerを使って構築する【新編集版】](https://qiita.com/ucan-lab/items/5fc1281cd8076c8ac9f4#a-laravel%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%82%92%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%E6%8C%87%E5%AE%9A%E3%81%97%E3%81%A6%E6%96%B0%E8%A6%8F%E4%BD%9C%E6%88%90)
 
 ## Introduction
@@ -76,8 +76,8 @@ $ docker-compose down -v && docker-compose up
 ```
 
 ## License
-copyright (c) 2021 haruu11113/docker-laravel-template  
-https://github.com/haruu11113/docker-laravel-template/blob/main/LICENSE  
+copyright (c) 2021 haruu11113/docker-laravel-template
+https://github.com/haruu11113/docker-laravel-template/blob/main/LICENSE
 
-copyright (c) 2020 ucan-lab/docker-laravel  
-https://github.com/ucan-lab/docker-laravel/blob/main/LICENSE  
+copyright (c) 2020 ucan-lab/docker-laravel
+https://github.com/ucan-lab/docker-laravel/blob/main/LICENSE
