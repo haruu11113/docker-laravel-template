@@ -1,6 +1,6 @@
 FROM nginx:1.22
 
-WORKDIR /home/ec2-user/code/ea
+WORKDIR /home/ec2-user/code/
 
 ENV TZ=UTC
 
