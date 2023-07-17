@@ -7,7 +7,7 @@
         "docker-compose.yml"
     ],
     "service": "app",
-    "workspaceFolder": "/home/ec2-user/code/ea/",
+    "workspaceFolder": "/home/ec2-user/code/",
     "customizations": {
         "vscode": {
             "extensions": [
