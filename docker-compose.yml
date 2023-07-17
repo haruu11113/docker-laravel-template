@@ -10,7 +10,7 @@ services:
       dockerfile: ./infra/docker/php/Dockerfile
     volumes:
       - php-fpm-socket:/var/run/php-fpm
-      - ./backend:/home/ec2-user/code/ea
+      - ./backend:/home/ec2-user/code
     environment:
       - DB_CONNECTION=mysql
       - DB_HOST=db
@@ -28,7 +28,7 @@ services:
       - ${WEB_PORT:-80}:80
     volumes:
       - php-fpm-socket:/var/run/php-fpm
-      - ./backend:/home/ec2-user/code/ea
+      - ./backend:/home/ec2-user/code
 
   db:
     container_name: laravel-db
