@@ -94,4 +94,4 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - \
 #     && pecl install protobuf \
 #     && apt-get install -y r-base
 
-WORKDIR /home/ec2-user/code/ea/
+WORKDIR /home/ec2-user/code/
