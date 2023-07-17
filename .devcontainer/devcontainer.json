@@ -22,6 +22,8 @@
                 // HTML debug
                 "ecmel.vscode-html-css",
                 "formulahendry.auto-close-tag",
+                "hookyqr.beautify",
+                "fabiospampinato.vscode-highlight",
                 // PHP debug
                 "ryannaddy.laravel-artisan",
                 "codingyu.laravel-goto-view",
